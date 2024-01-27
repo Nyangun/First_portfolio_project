@@ -1,0 +1,97 @@
+# Walmart Sales Analysis Project
+
+# Overview
+This project delves into the Walmart Sales data, aiming to uncover valuable insights into the performance of branches, product lines, and customer behavior. The dataset, sourced from the Kaggle Walmart Sales Forecasting Competition, provides a comprehensive view of historical sales data from 45 Walmart stores across different regions. The challenge involves predicting departmental sales, considering the impact of selected holiday markdown events.
+
+# Project Objectives
+The primary objectives are to gain a deep understanding of Walmart's sales dynamics, identify top-performing branches and products, and explore customer behavior. By analyzing sales trends and patterns, the project seeks to inform strategies for optimizing and improving Walmart's sales approach.
+
+# Dataset Information
+The dataset consists of sales transactions from three Walmart branches in Mandalay, Yangon, and Naypyitaw. It encompasses 17 columns and 1000 rows, detailing various aspects of each transaction, such as invoice details, branch information, customer type, product details, pricing, and ratings.
+
+# Column	      Description	              Data Type
+invoice_id	  Invoice of the sales made	      VARCHAR(30)
+branch	     Branch where sales were made	      VARCHAR(5)
+city	     Location of the branch	              VARCHAR(30)
+customer_type	Type of the customer	      VARCHAR(30)
+gender	     Gender of the purchasing customer     VARCHAR(10)
+product_line   Product line of the sold product   VARCHAR(100)
+unit_price	  Price of each product	              DECIMAL(10, 2)
+quantity	  Amount of the product sold	        INT
+VAT	      Tax amount on the purchase	           FLOAT(6, 4)
+total	   Total cost of the purchase	          DECIMAL(10, 2)
+date	   Date of the purchase	                DATE
+time	    Time of the purchase	               TIMESTAMP
+payment_method	   Method used to pay	           DECIMAL(10, 2)
+cogs	      Cost Of Goods Sold (COGS)	           DECIMAL(10, 2)
+gross_margin_percentage	 Gross margin percentage   	FLOAT(11, 9)
+gross_income	      Gross Income	                     DECIMAL(10, 2)
+rating	         Rating of the transaction	               FLOAT(2, 1)
+
+# Analysis Focus Areas
+
+1. Product Analysis
+Explore different product lines.
+Identify best-performing and underperforming product lines.
+
+2. Sales Analysis
+Analyze sales trends and patterns.
+Evaluate the effectiveness of sales strategies.
+Propose modifications for enhanced sales performance.
+
+3. Customer Analysis
+Segment customers and analyze purchase trends.
+Assess the profitability of each customer segment.
+
+
+# Methodology
+
+1. Data Wrangling
+Build a database structure.
+Create tables and insert data.
+Check for null values (Note: Database design avoids null values).
+
+2. Feature Engineering
+Introduce new columns like time_of_day, day_name, and month_name to provide insights into sales patterns.
+
+3. Exploratory Data Analysis (EDA)
+Address business questions through data analysis.
+Uncover key insights to inform decision-making.
+
+# Business Questions
+
+# Generic Questions
+
+What is the distribution of unique cities in the dataset?
+Which city is each branch located in?
+
+# Product-Related Questions
+How diverse are the product lines in the dataset?
+What payment methods are most commonly used?
+Which product line contributes the most to overall sales?
+What is the total revenue per month?
+In which month does the dataset record the highest Cost Of Goods Sold (COGS)?
+Which product line generates the highest revenue?
+What city contributes the most to total revenue?
+For each product line, categorize as "Good" or "Bad" based on sales performance.
+Identify branches that exceed the average quantity of products sold.
+What is the most popular product line for each gender?
+What is the average rating for each product line?
+
+# Sales-Related Questions
+How do sales vary throughout the day on each weekday?
+Which customer type generates the most revenue?
+Which city has the highest Value Added Tax (VAT) percentage?
+Which customer type contributes the most to VAT payments?
+
+# Customer-Related Questions
+How many unique customer types are present in the dataset?
+How diverse are the payment methods used by customers?
+What is the most common customer type?
+Which customer type makes the most significant quantity of purchases?
+What is the predominant gender among customers?
+How is gender distributed across branches?
+During which time of the day do customers provide the most ratings?
+In each branch, at which time of the day do customers provide the most ratings?
+On which day of the week do customers give the highest average ratings?
+For each branch, on which day of the week do customers give the best average ratings?
